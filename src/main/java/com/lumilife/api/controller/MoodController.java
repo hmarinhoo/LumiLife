@@ -33,13 +33,14 @@ public class MoodController {
     }
 
     // Ideia de calendário - histórico mensal de moods
+    @GetMapping("/periodo") 
     public List<Mood> buscarPorPeriodo(
-            @RequestParam Long userId,
-            @RequestParam LocalDate inicio,
-            @RequestParam LocalDate fim) {
+        @RequestParam Long userId,
+        @RequestParam LocalDate inicio,
+        @RequestParam LocalDate fim) {
 
         return moodService.buscarPorPeriodo(userId, inicio, fim);
-    }
+}
 
     // Mood de um dia específico
     @GetMapping("/dia")

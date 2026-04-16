@@ -16,8 +16,6 @@ public class Mood {
 
     private LocalDate data;
 
-    private String mood;
-
     private String descricao;
 
     @ManyToOne

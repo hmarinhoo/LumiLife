@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>LumiLife</title>
+    <meta charset="UTF-8">
+
+    <!-- Fonte bonita -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #F0FFDF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+            letter-spacing: -1px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            display: inline-block;
+        }
+
+        .btn {
+            display: block;
+            width: 220px;
+            margin: 10px auto;
+            padding: 12px;
+            border-radius: 25px;
+            border: none;
+            background-color: #FFAAB8;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn.secondary {
+            background-color: #A8DF8E;
+            color: #333;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">LumiLife</div>
+
+    <h1>Um espaço para cuidar de você</h1>
+
+    <p>
+        Organize sua rotina, acompanhe seu humor e tenha mais leveza no dia a dia.
+    </p>
+
+    <div class="card">
+        <a href="/login" class="btn">Entrar</a>
+        <a href="/cadastro" class="btn secondary">Criar conta</a>
+    </div>
+
+</div>
+
+</body>
+</html>

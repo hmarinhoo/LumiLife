@@ -1,11 +1,10 @@
 package com.lumilife.api.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
+@Entity
+@Table(name = "users") 
 @Data
 public class User {
 
